@@ -26,7 +26,7 @@
     }
   }
   :global(section h2::selection, section p::selection) { background-color: var(--lavender); color: var(--lavender); }
-  :global(section h2) { font-size: 2.25rem; padding: 0.25em; padding-left: 1rem; }
+  :global(h2) { font-size: 2.25rem; padding: 0.25rem; padding-left: .5rem; }
   :global(section p) { padding: 0 0.75em; font-size: 1rem; margin: 0; max-width: 65ch; letter-spacing: -0.04em; }
   @media (min-width: 750px) { div { width: max-content; } }
 </style>

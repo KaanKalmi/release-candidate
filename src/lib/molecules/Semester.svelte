@@ -24,6 +24,7 @@
     color: var(--blueberry);
     text-decoration: none;
     display: inline-block;
+    font-size: 1.5em;
     margin: 0 -0.5rem 0.5rem;
   }
 
