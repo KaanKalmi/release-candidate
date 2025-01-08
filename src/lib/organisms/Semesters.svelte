@@ -13,12 +13,7 @@
   {#if jsEnabled}
     <form class="agenda-container">
       <label for="show-hide-dates">
-        <input
-          type="checkbox"
-          id="show-hide-dates"
-          class="pacman"
-          onchange={toggleDates}
-        />
+        <input type="checkbox" id="show-hide-dates" class="pacman" onchange={toggleDates}/>
         Show/hide full agenda
       </label>
     </form>
@@ -32,20 +27,33 @@
 </section>
 
 <style>
+  form {
+
+    label{
+      display: flex;
+      flex-direction: column;
+
+      input{
+        
+      }
+    }
+  } 
+
   @keyframes waka_waka_waka { to { transform: translate(-50%, var(--translation)) rotate(var(--rotation)); } }
+
   .pacman {
     appearance: none;
     position: relative;
     font-size: 1.5em;
     width: 3em;
-    margin-left: 1em;
+    margin-left: -0.15em;
     aspect-ratio: 3;
     border: max(1px, 0.05em) solid #fff;
     border-radius: 2em;
     box-sizing: content-box;
     background: linear-gradient(90deg, var(--lavender) 6em, #1230 0) -5.5em 0 / 9em 100%, radial-gradient(circle, #fff 0.075em, #fff0 0.08em) 50% 0 / 0.4em 100%, var(--lavender);
     transition: background-position calc(var(--speed) * 4) linear;
-    --waka-speed: 0.2s;
+    --waka-speed: 0.4s;
     --speed: 0.5s;
   }
 
@@ -78,10 +86,7 @@
   .pacman:checked::after { --rotation: 30deg; }
 
   @media (prefers-reduced-motion: reduce) {
-    .pacman::before,
-    .pacman::after {
-      animation: none;
-    }
+    .pacman::before, .pacman::after { animation: none; }
   }
 
   section {
@@ -90,7 +95,9 @@
     background: var(--grey);
     color: var(--blueberry);
   }
-  h2 { margin: 0; padding: 3rem 1.25rem 1.5rem; }
+
+  h2 { margin: 0; padding: 3rem .25rem 1.5rem; }
+
   .semester-grid {
     display: flex;
     flex-direction: row;
@@ -99,17 +106,16 @@
     scroll-snap-type: x mandatory;
     padding: 1rem 1rem 2rem 0rem;
   }
+
   label {
     color: var(--blueberry);
     font-size: 0.7rem;
     font-weight: 600;
     margin-left: 0.8rem;
   }
-  @media (min-width: 600px) {
-    .semester-grid {
-      gap: 3rem;
-    }
-  }
+
+  @media (min-width: 600px) { .semester-grid { gap: 3rem; } }
+
   @media (min-width: 1250px) {
     .semester-grid {
       display: grid;
@@ -117,6 +123,7 @@
       gap: 3rem;
       padding: 2rem 1rem 2rem 1rem;
     }
+
     h2 { padding-left: 2rem; }
   }
 </style>
