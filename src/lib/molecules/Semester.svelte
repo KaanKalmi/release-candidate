@@ -18,6 +18,7 @@
     padding: 0;
     border: none;
     scroll-snap-align: start;
+    margin-left: -.15em;
   }
 
   .semester a {
@@ -34,7 +35,7 @@
     list-style: none;
     padding: 0.5rem;
     margin-top: -1em;
-    width: 360px;
+    width: 320px;
   }
 
   :global(.semester h2) {
@@ -56,5 +57,9 @@
     }
 
     .semester > a:focus { color: var(--blueberry); }
+
+    ol{
+      width: 360px;
+    }
   }
 </style>
