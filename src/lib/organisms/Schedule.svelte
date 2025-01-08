@@ -97,7 +97,7 @@
   }
 
   section > :global(h2) {
-    padding-bottom: 0;
+    padding: 0;
   }
 
   .week-container { padding: 2rem 0 2rem 0; }
