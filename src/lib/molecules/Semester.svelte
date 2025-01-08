@@ -34,7 +34,7 @@
     list-style: none;
     padding: 0.5rem;
     margin-top: -1em;
-    width: 350px;
+    width: 360px;
   }
 
   :global(.semester h2) {
@@ -56,10 +56,5 @@
     }
 
     .semester > a:focus { color: var(--blueberry); }
-
-    ol {
-      list-style: none;
-      width: 85%;
-    }
   }
 </style>
