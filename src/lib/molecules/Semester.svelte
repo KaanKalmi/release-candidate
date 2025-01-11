@@ -18,7 +18,7 @@
         // Observer options
         root: null, // Use the viewport as the root
         rootMargin: "0px", // No margin around the root
-        threshold: 0.5, // Trigger when 50% of the element is visible
+        threshold: [0, 0.5], // Trigger when 50% of the element is visible
       },
     );
 
