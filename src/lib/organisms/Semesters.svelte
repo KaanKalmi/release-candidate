@@ -109,9 +109,9 @@
     .semester-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      padding: 2rem 1rem 2rem 1rem;
+      padding: 2rem 0rem 2rem 0rem;
     }
 
-    h2 { padding-left: 2rem; }
+    h2 { padding-left: 0rem; }
   }
 </style>

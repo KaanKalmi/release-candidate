@@ -30,6 +30,6 @@
   }
 
   article div { margin-top: 1.5rem; }
-  :global(article p) { font-size: 1rem; }
+  :global(article p) { font-size: 1rem; padding-left: .5rem;}
   :global(blockquote) { font-size: 1rem; }
 </style>

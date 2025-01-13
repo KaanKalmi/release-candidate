@@ -24,7 +24,7 @@
     gap: 2rem;
     background-color: var(--grey);
     border-radius: var(--rounded) 0 0 0;
-    padding: 3rem 0 1rem 0;
+    padding: 3rem 0 2rem 0;
   }
 
   @media (min-width: 40em) {
