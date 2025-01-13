@@ -22,23 +22,26 @@
 </aside>
 
 <style>
-  aside ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 0.25rem;
-    row-gap: 0.25rem;
-  }
+  aside {
+    padding-left: .5rem;
 
-  aside ul li {
-    padding: 0.1rem .25rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    border-radius: var(--rounded);
-    line-height: 1.5;
-    display: flex;
-    background: var(--turquoise);
-    color: black;
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0.25rem;
+      row-gap: 0.25rem;
+      li {
+        padding: 0.1rem .25rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        border-radius: var(--rounded);
+        line-height: 1.5;
+        display: flex;
+        background: var(--turquoise);
+        color: black;
+      }
+    }
   }
 </style>

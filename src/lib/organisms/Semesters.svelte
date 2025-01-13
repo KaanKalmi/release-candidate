@@ -13,12 +13,7 @@
   {#if jsEnabled}
     <form class="agenda-container">
       <label for="show-hide-dates">
-        <input
-          type="checkbox"
-          id="show-hide-dates"
-          class="pacman"
-          onchange={toggleDates}
-        />
+        <input type="checkbox" id="show-hide-dates" class="pacman" onchange={toggleDates}/>
         Show/hide full agenda
       </label>
     </form>
@@ -33,19 +28,40 @@
 
 <style>
   @keyframes waka_waka_waka { to { transform: translate(-50%, var(--translation)) rotate(var(--rotation)); } }
+
+  section {
+    position: relative;
+    padding: 0;
+    background: var(--grey);
+    color: var(--blueberry);
+  }
+
+  h2 { margin: 0; padding: 3rem .1rem 1.5rem; }
+
+  form {
+    label{
+      display: flex;
+      flex-direction: column;
+      color: var(--blueberry);
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin-left: 0.15rem;
+    }
+  
+
   .pacman {
     appearance: none;
     position: relative;
     font-size: 1.5em;
-    width: 3em;
-    margin-left: 1em;
+    width: 3.5em;
+    margin-left: -0.15em;
     aspect-ratio: 3;
     border: max(1px, 0.05em) solid #fff;
     border-radius: 2em;
     box-sizing: content-box;
     background: linear-gradient(90deg, var(--lavender) 6em, #1230 0) -5.5em 0 / 9em 100%, radial-gradient(circle, #fff 0.075em, #fff0 0.08em) 50% 0 / 0.4em 100%, var(--lavender);
     transition: background-position calc(var(--speed) * 4) linear;
-    --waka-speed: 0.2s;
+    --waka-speed: 0.4s;
     --speed: 0.5s;
   }
 
@@ -54,7 +70,7 @@
     --translation: -100%;
     content: "";
     position: absolute;
-    width: 0.8em;
+    width: 0.7em;
     height: 0.4em;
     background: yellow;
     border-radius: 50% / 100% 100% 0 0;
@@ -76,47 +92,26 @@
   .pacman:checked { background-position: 2.5em 0, 50% 0; }
   .pacman:checked::before, .pacman:checked::after { --rotation: -30deg; left: calc(100% - 0.5em); }
   .pacman:checked::after { --rotation: 30deg; }
-
-  @media (prefers-reduced-motion: reduce) {
-    .pacman::before,
-    .pacman::after {
-      animation: none;
-    }
   }
 
-  section {
-    position: relative;
-    padding: 0;
-    background: var(--grey);
-    color: var(--blueberry);
-  }
-  h2 { margin: 0; padding: 3rem 1.25rem 1.5rem; }
   .semester-grid {
     display: flex;
     flex-direction: row;
     overflow: scroll;
-    gap: 2.75em;
+    gap: 1.75em;
     scroll-snap-type: x mandatory;
-    padding: 1rem 1rem 2rem 0rem;
+    padding: 1rem 0 2rem 0;
   }
-  label {
-    color: var(--blueberry);
-    font-size: 0.7rem;
-    font-weight: 600;
-    margin-left: 0.8rem;
-  }
-  @media (min-width: 600px) {
-    .semester-grid {
-      gap: 3rem;
-    }
-  }
+
+  @media (prefers-reduced-motion: reduce) { .pacman::before, .pacman::after { animation: none; } }
+
   @media (min-width: 1250px) {
     .semester-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 3rem;
-      padding: 2rem 1rem 2rem 1rem;
+      padding: 2rem 0rem 2rem 0rem;
     }
-    h2 { padding-left: 2rem; }
+
+    h2 { padding-left: 0rem; }
   }
 </style>

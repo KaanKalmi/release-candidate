@@ -106,7 +106,7 @@
   }
 
   section > :global(h2) {
-    padding-bottom: 0;
+    padding: 0;
     margin: 0.5em 0 0 0;
   }
 

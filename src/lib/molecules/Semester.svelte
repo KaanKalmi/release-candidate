@@ -50,6 +50,7 @@
     padding: 0;
     border: none;
     scroll-snap-align: start;
+    margin-left: -.15em;
     transition: filter 0.3s ease-in-out;
   }
 
@@ -61,6 +62,7 @@
     color: var(--blueberry);
     text-decoration: none;
     display: inline-block;
+    font-size: 1.5em;
     margin: 0 -0.5rem 0.5rem;
   }
 
@@ -71,8 +73,9 @@
   ol {
     list-style: none;
     padding: 0.5rem;
-    margin-top: -1em;
-    width: 350px;
+    margin-top: -1.5em;
+    margin-left: -.25em;
+    width: 320px;
   }
 
   :global(.semester h2) {
@@ -99,7 +102,7 @@
 
     ol {
       list-style: none;
-      width: 85%;
+      width: 360px;
     }
   }
 </style>

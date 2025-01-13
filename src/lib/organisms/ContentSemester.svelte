@@ -14,6 +14,7 @@
 <style>
   article {
     margin-block: 2rem;
+    margin-inline: 0.5rem;
     padding: 1rem;
     background-color: var(--white);
     border: 2px solid var(--turquoise);
