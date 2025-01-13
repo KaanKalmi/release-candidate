@@ -34,7 +34,8 @@
   ol {
     list-style: none;
     padding: 0.5rem;
-    margin-top: -1em;
+    margin-top: -1.5em;
+    margin-left: -.25em;
     width: 320px;
   }
 
@@ -55,8 +56,6 @@
       text-decoration: none;
       display: inline-block;
     }
-
-    .semester > a:focus { color: var(--blueberry); }
 
     ol{
       width: 360px;
