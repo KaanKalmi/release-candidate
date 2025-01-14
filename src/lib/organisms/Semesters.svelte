@@ -59,6 +59,7 @@
     border: max(1px, 0.05em) solid #fff;
     border-radius: 2em;
     box-sizing: content-box;
+    cursor: pointer;
     background: linear-gradient(90deg, var(--lavender) 6em, #1230 0) -5.5em 0 / 9em 100%, radial-gradient(circle, #fff 0.075em, #fff0 0.08em) 50% 0 / 0.4em 100%, var(--lavender);
     transition: background-position calc(var(--speed) * 4) linear;
     --waka-speed: 0.4s;
