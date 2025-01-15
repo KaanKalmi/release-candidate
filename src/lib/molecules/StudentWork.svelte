@@ -1,7 +1,7 @@
 <script>
-  import Heading from "$lib/components/Heading.svelte";
+  import Heading from "$lib/molecules/Heading.svelte";
   import IconStar from "$lib/atoms/Star.svelte";
-  let { stargazer = $bindable(false) } = $props();
+  let { stargazer = $bindable(false), tasks } = $props();
   if (tasks) { tasks.forEach((task) => { if (!stargazer && task.forks && task.forks.length > 0) { stargazer = true; } });}
 </script>
 
@@ -39,9 +39,9 @@
   section.showcase ul {
     display: flex;
     gap: 1rem;
-    margin: 0 -1rem;
-    width: calc(100% + 2rem);
-    overflow: auto;
+    margin: 0 -2rem;
+    width: calc(99% + 2rem);
+    overflow: scroll;
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
   }
@@ -57,6 +57,9 @@
     width: 300px;
     min-width: 300px;
     scroll-snap-align: center;
+    background: var(--white);
+    border: var(--turquoise) 2px solid;
+    box-shadow: -2px 2px 2px var(--lavender);
     gap: 0.25rem;
   }
 
@@ -82,10 +85,12 @@
   .links a {
     border: 1px solid currentColor;
     border-radius: 1rem;
-    padding: 0.2em 0.4em;
+    padding: 0.3em 0.5em;
+    margin: 1em 0 .8em 0;
     line-height: 1;
     text-decoration: none;
     font-size: 0.6em;
+    color: var(--blueberry);
   }
 
   .links a:hover {
@@ -111,6 +116,7 @@
     font-size: 0.7em;
     display: block;
     padding: 0;
+    color: var(--lavender);
   }
 
   .profile::before {
