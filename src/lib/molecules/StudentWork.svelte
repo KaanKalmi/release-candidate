@@ -1,7 +1,7 @@
 <script>
-  import Heading from "$lib/components/Heading.svelte";
+  import Heading from "$lib/molecules/Heading.svelte";
   import IconStar from "$lib/atoms/Star.svelte";
-  let { stargazer = $bindable(false) } = $props();
+  let { stargazer = $bindable(false), tasks } = $props();
   if (tasks) { tasks.forEach((task) => { if (!stargazer && task.forks && task.forks.length > 0) { stargazer = true; } });}
 </script>
 
