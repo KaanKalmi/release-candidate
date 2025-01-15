@@ -34,19 +34,18 @@
 </section>
 
 <style>
-  section.showcase { display: block; }
+  .showcase { display: block; }
 
-  section.showcase ul {
+  .showcase ul {
     display: flex;
     gap: 1rem;
-    margin: 0 -2rem;
-    width: calc(99% + 2rem);
+    padding: 0;
     overflow: scroll;
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
   }
 
-  section.showcase ul li {
+  .showcase ul li {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
@@ -63,7 +62,7 @@
     gap: 0.25rem;
   }
 
-  section.stargazer { display: block; }
+  .stargazer { display: block; }
 
   .repo { overflow: hidden; }
 
