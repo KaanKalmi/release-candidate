@@ -78,9 +78,9 @@
     width: 320px;
   }
 
-  :global(.semester h2) {
+  :global(.semester h2 ) {
     line-height: 1.1;
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
   }
 
   :global(.semester h2 > span) {
