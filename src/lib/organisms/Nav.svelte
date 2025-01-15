@@ -64,6 +64,7 @@
         letter-spacing: -0.03em;
         font-size: 0.9rem;
         margin-left: 0.25em;
+        display: none;
       }
       p::before { content: unset; }
     }
@@ -123,7 +124,7 @@
   @media (760px <= width) {
     header {
       .top { .hva-logo { width: 40%; }
-        p { margin-left: 1em; font-size: 1rem; }
+        p { margin-left: 1em; font-size: 1rem; display: block; }
         p::before {
           content: "";
           position: absolute;

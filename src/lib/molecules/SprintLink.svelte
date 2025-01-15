@@ -5,7 +5,9 @@
   const sprintDate = new Date(sprint.startdate);
   let nextSprintDate = nextSprint ? new Date(nextSprint.startdate) : false;
 
-  let active = $derived( today >= sprintDate && (!nextSprintDate || today < nextSprintDate));
+  let active = $derived(
+    today >= sprintDate && (!nextSprintDate || today < nextSprintDate),
+  );
   let past = $derived(nextSprintDate && today > nextSprintDate);
 </script>
 
@@ -35,7 +37,10 @@
 {/if}
 
 <style>
-  a:focus, a:hover { background-position: left bottom; }
+  a:focus,
+  a:hover {
+    background-position: left bottom;
+  }
 
   li {
     display: flex;
@@ -62,13 +67,21 @@
     position: relative;
     height: 100%;
     width: 100%;
-    background: linear-gradient( to right, var(--turquoise) 50%, var(--white) 50% );
+    background: linear-gradient(
+      to right,
+      var(--turquoise) 50%,
+      var(--white) 50%
+    );
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.3s ease-in;
   }
 
-  @media (prefers-reduced-motion: reduce) { li a { transition: none; }  }
+  @media (prefers-reduced-motion: reduce) {
+    li a {
+      transition: none;
+    }
+  }
 
   li a span {
     display: flex;
@@ -95,7 +108,9 @@
     padding-left: 0.5em;
   }
 
-  :global(li.past) { opacity: 0.5; }
+  :global(li.past) {
+    opacity: 0.5;
+  }
 
   :global(li.past strong) {
     font-weight: 500;
@@ -107,8 +122,11 @@
     text-decoration: line-through;
   }
 
-  span.past { color: var(--attention); }
-  li a, li > span {
+  span.past {
+    color: var(--attention);
+  }
+  li a,
+  li > span {
     display: flex;
     white-space: nowrap;
     overflow: hidden;

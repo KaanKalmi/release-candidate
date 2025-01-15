@@ -4,7 +4,14 @@
   let { weekPlans } = $props();
   const checkKeywords = (content) => {
     const strings = [
-      "sprintplanning", "kickoff", "workshop", "opdrachtgever", "code review", "retrospect ", "wrap-up", "review",
+      "sprintplanning",
+      "kickoff",
+      "workshop",
+      "opdrachtgever",
+      "code review",
+      "retrospect ",
+      "wrap-up",
+      "review",
     ];
     let newString = "";
     if (content) {
@@ -13,13 +20,15 @@
         let toReplace = strings.filter((s) => {
           if (paragraph.toLowerCase().includes(s)) {
             return s
-              .replace("we ♥ web", "we love web", s) .replaceAll(" ", "-", s);
+              .replace("we ♥ web", "we love web", s)
+              .replaceAll(" ", "-", s);
           }
         });
         let classes = toReplace.join(" ");
         paragraph = "<p>" + paragraph;
         newString += paragraph.replace(
-          "<p>", `<p class="${classes}">`,
+          "<p>",
+          `<p class="${classes}">`,
           paragraph,
         );
       });
@@ -97,12 +106,17 @@
   }
 
   section > :global(h2) {
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0.5em 0 0 0;
   }
 
-  .week-container { padding: 2rem 0 2rem 0; }
+  .week-container {
+    padding: 2rem 0 2rem 0;
+  }
 
-  .week + .week { margin-top: 2rem; }
+  .week + .week {
+    margin-top: 2rem;
+  }
 
   h3 {
     font-weight: normal;
@@ -133,8 +147,6 @@
     color: var(--blueberry);
   }
 
-  .day div { margin-left: 0; }
-
   .day :global(p) {
     --border: var(--white);
     position: relative;
@@ -154,19 +166,20 @@
     opacity: 1;
   }
 
-  .day :global(.sprintplanning) { --border: var(--lavender); }
-
-  .day :global(.workshop) { --border: var(--turquoise); }
-
-  .day :global(.opdrachtgever), .day :global(.code-review), .day :global(.review), .day :global(.retrospect), .day :global(.kickoff), .day :global(.wrap-up) { --border: var(--call-to-action); }
-
   @media (min-width: 630px) {
     .week {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 1.5em;
     }
 
-    .day { min-height: 17em; }
+    .day {
+      height: auto;
+      max-height: 300px;
+      overflow-y: auto;
+
+      scrollbar-color: var(--lavender) #e0e0e0;
+      scrollbar-width: thin;
+    }
   }
 </style>

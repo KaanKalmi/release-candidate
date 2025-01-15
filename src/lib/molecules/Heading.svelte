@@ -18,6 +18,9 @@
     letter-spacing: -0.04em;
     margin: 0;
     font-weight: 600;
+    font-size: 2.25rem;
+    padding: 0.25rem;
+    padding-left: .5rem;
   }
 
   h2 > strong {
