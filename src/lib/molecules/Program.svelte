@@ -17,6 +17,8 @@
     color: var(--blueberry);
     border-radius: var(--rounded) 0 0 0;
     padding: 3rem 1.25rem 2rem 0rem;
+    max-width: 25em;
+
     div {
       padding: 1.25em;
       background-color: var(--white);
