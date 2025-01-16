@@ -154,7 +154,7 @@
   }
 
   .day :global(p) {
-    --border: var(--white);
+    --border: var(--lavender);
     position: relative;
     font-size: 1rem;
     padding-left: 1rem;
@@ -171,6 +171,12 @@
     background-color: var(--border);
     opacity: 1;
   }
+
+  .day :global(.sprintplanning) { --border: var(--lavender); }
+
+  .day :global(.workshop) { --border: var(--turquoise); }
+
+  .day :global(.opdrachtgever), .day :global(.code-review), .day :global(.review), .day :global(.retrospect), .day :global(.kickoff), .day :global(.wrap-up) { --border: var(--call-to-action); }
 
   @media (min-width: 630px) {
     .week {
