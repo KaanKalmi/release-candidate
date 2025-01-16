@@ -24,6 +24,7 @@
 </section>
 
 <style>
+  :global(h2) { font-size: 1.25em !important;}
   section{
     display: flex;
     flex-direction: column;
