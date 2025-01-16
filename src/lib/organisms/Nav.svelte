@@ -72,8 +72,10 @@
     .left {
       grid-area: left;
       display: flex;
-      align-items: center;
-      margin: auto;
+      align-items: left;
+      margin: 0;
+      padding-left: 1em;
+
       a:hover, a:focus { transform: scale(1.1); }
       .fdnd-logo {
         position: relative;
