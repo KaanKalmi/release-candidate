@@ -107,12 +107,6 @@
   @media (prefers-reduced-motion: reduce) { .pacman::before, .pacman::after { animation: none; } }
 
   @media (min-width: 1250px) {
-    .semester-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      padding: 2rem 0rem 2rem 0rem;
-    }
-
     h2 { padding-left: 0rem; }
   }
 </style>
