@@ -144,7 +144,7 @@
     font-size: 0.7em;
     display: block;
     padding: 0;
-    color: var(--lavender);
+    color: #7f2fff;
   }
 
   .profile::before {

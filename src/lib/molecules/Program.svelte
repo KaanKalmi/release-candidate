@@ -16,7 +16,7 @@
     background-color: var(--grey);
     color: var(--blueberry);
     border-radius: var(--rounded) 0 0 0;
-    padding: 3rem 1.25rem 2rem 0rem;
+    padding: 3rem 1.25rem 2rem 1.25rem;
     max-width: 25em;
 
     div {
@@ -29,5 +29,5 @@
   }
   :global(section h2::selection, section p::selection) { background-color: var(--lavender); color: var(--lavender); }
   :global(section p) { padding: 0 0.75em; font-size: 1rem; margin: 0; max-width: 65ch; letter-spacing: -0.04em; }
-  @media (min-width: 750px) { div { width: max-content; } }
+  @media (min-width: 750px) { section{ padding: 3rem .25rem 2rem 0; div { width: max-content; } }}
 </style>
