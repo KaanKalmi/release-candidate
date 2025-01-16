@@ -125,6 +125,8 @@
     background: var(--grey);
     top: 0;
     z-index: 1;
+    margin-left: -1em;
+    padding-left: 1em;
   }
 
   .week {
