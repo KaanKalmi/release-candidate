@@ -121,6 +121,10 @@
   h3 {
     font-weight: normal;
     margin-top: 0;
+    position: sticky;
+    background: var(--grey);
+    top: 0;
+    z-index: 1;
   }
 
   .week {
