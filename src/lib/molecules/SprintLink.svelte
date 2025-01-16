@@ -159,7 +159,7 @@
 
   @media( 720px <= width){
     li {
-      width: 300px;
+      width: 320px;
     }
   }
 </style>
