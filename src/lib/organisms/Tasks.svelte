@@ -45,12 +45,12 @@
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      margin-top: 0;
+      margin-top: .5em;
       margin-bottom: 0.5em;
       padding-left: .75em;
 
       a {
-        color: var(--attention);
+        color: #7f2fff;
         font-weight: 700;
         text-transform: capitalize;
         overflow: hidden;
@@ -68,6 +68,7 @@
       small {
         font-size: 0.7em;
         font-weight: 400;
+        color: #444;
         margin-left: 0.25rem;
         padding: 0 0.1rem;
         transform: translateY(-5px);
@@ -75,8 +76,8 @@
       }
     }
     p {
-        margin-top: 0em;
-        margin-bottom: 1.2em;
+        margin-top: -.5em;
+        margin-bottom: 1.25em;
         padding-left: .75em;
       }
   }
