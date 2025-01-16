@@ -28,7 +28,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 1.5em;
-    margin: 0 -0.5rem 0.5rem;
+    margin: 0 -0.5rem 0.5 0.5em;
   }
 
   .semester a:focus {
@@ -70,4 +70,5 @@
       max-width: 360px;
     }
   }
+
 </style>
