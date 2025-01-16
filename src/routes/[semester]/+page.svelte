@@ -24,7 +24,6 @@
 </section>
 
 <style>
-  :global(h2) { font-size: 1.25em !important; padding-top: 1.5em !important;}
   section{
     display: flex;
     flex-direction: column;
@@ -36,7 +35,6 @@
   }
 
   @media (750px <=width){
-    :global(h2) { padding-top: 2.5em !important;}
     section{
       display: flex;
       flex-direction: column;
