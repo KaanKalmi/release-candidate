@@ -101,8 +101,8 @@
   position: relative;
   }
 
-.gradient-container::before,
-.gradient-container::after {
+  .gradient-container::before,
+  .gradient-container::after {
   content: '';
   position: absolute;
   top: 0;
@@ -111,13 +111,13 @@
   pointer-events: none;
   }
 
-.gradient-container::before {
+  .gradient-container::before {
   left: 0;
   background: linear-gradient(to right, var(--grey), rgba(255, 255, 255, 0));
   z-index: 1;
   }
 
-.gradient-container::after {
+  .gradient-container::after {
   right: 0;
   background: linear-gradient(to left, var(--grey), rgba(255, 255, 255, 0));
   z-index: 1;
