@@ -7,6 +7,7 @@
 
 <section class="showcase {stargazer ? 'stargazer' : ''}">
   <Heading title="Studentenwerk" />
+  <div class="gradient-container">
   <ul>
     {#each tasks as task}
       {#if task.forks && task.forks.length > 0}
@@ -31,22 +32,49 @@
       {/if}
     {/each}
   </ul>
+  </div>
 </section>
 
 <style>
-  section.showcase { display: block; }
+  .showcase { display: block; }
 
-  section.showcase ul {
+  .gradient-container {
+    width: 100%;
+    position: relative;
+  }
+
+  .gradient-container::before,
+  .gradient-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    pointer-events: none;
+  }
+
+  .gradient-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--grey), rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+
+  .gradient-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--grey), rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
+
+  .showcase ul {
     display: flex;
     gap: 1rem;
-    margin: 0 -1rem;
-    width: calc(100% + 2rem);
-    overflow: auto;
+    padding: 0 .5rem 0 .5rem;
+    overflow: scroll;
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
   }
 
-  section.showcase ul li {
+  .showcase ul li {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
@@ -57,10 +85,13 @@
     width: 300px;
     min-width: 300px;
     scroll-snap-align: center;
+    background: var(--white);
+    border: var(--turquoise) 2px solid;
+    box-shadow: -2px 2px 2px var(--lavender);
     gap: 0.25rem;
   }
 
-  section.stargazer { display: block; }
+  .stargazer { display: block; }
 
   .repo { overflow: hidden; }
 
@@ -82,10 +113,12 @@
   .links a {
     border: 1px solid currentColor;
     border-radius: 1rem;
-    padding: 0.2em 0.4em;
+    padding: 0.3em 0.5em;
+    margin: 1em 0 .8em 0;
     line-height: 1;
     text-decoration: none;
     font-size: 0.6em;
+    color: var(--blueberry);
   }
 
   .links a:hover {
@@ -111,6 +144,7 @@
     font-size: 0.7em;
     display: block;
     padding: 0;
+    color: var(--lavender);
   }
 
   .profile::before {

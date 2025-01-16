@@ -1,11 +1,12 @@
 <script>
   import Content from "$lib/organisms/ContentSprint.svelte";
   import Tasks from "$lib/organisms/Tasks.svelte";
+  import Studentwork from "$lib/molecules/StudentWork.svelte";
   import Schedule from "$lib/organisms/Schedule.svelte";
   import Studentwork from "$lib/molecules/StudentWork.svelte";
   let { data } = $props();
 
-  const { title, sprintNumber, startdate, content, weekPlans, topics, tasks } = data;
+  const { title, sprintNumber, startdate, content, weekPlans, topics, tasks, stargazer } = data;
 </script>
 
 <div>
