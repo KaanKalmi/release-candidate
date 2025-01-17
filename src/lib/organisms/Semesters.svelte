@@ -38,7 +38,7 @@
     color: var(--blueberry);
   }
 
-  h2 { margin: 0; padding: 3rem .1rem 1.5rem; }
+  h2 { margin: 0; padding: 3rem .1rem 1.5rem 1%; }
 
   form {
     label{
@@ -47,7 +47,7 @@
       color: var(--blueberry);
       font-size: 0.7rem;
       font-weight: 700;
-      margin-left: 0.5em;
+      margin-left: 1%;
     }
   
 
@@ -133,8 +133,6 @@
   }
 
   @media (prefers-reduced-motion: reduce) { .pacman::before, .pacman::after { animation: none; } }
-
-  @media (min-width: 1250px) { h2 { padding-left: 0rem; } }
 
   @media (min-width: 1440px) { .semester-grid { justify-content: space-around; padding: 2em 0 2rem 0; } }
 </style>
