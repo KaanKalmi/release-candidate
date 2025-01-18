@@ -35,6 +35,7 @@
     background: var(--lavender);
     position: sticky;
     bottom: 0;
+    z-index: 1;
   }
 
   .fixed-bar::before, .fixed-bar::after {

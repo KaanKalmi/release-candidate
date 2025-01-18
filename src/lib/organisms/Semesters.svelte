@@ -97,31 +97,30 @@
   }
 
   .gradient-container {
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
   }
 
-  .gradient-container::before,
-  .gradient-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 10px;
-  pointer-events: none;
+  .gradient-container::before, .gradient-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    pointer-events: none;
   }
 
   .gradient-container::before {
-  left: 0;
-  background: linear-gradient(to right, var(--grey), rgba(255, 255, 255, 0));
-  z-index: 1;
+    left: 0;
+    background: linear-gradient(to right, var(--grey), rgba(255, 255, 255, 0));
+    z-index: 1;
   }
 
   .gradient-container::after {
-  right: 0;
-  background: linear-gradient(to left, var(--grey), rgba(255, 255, 255, 0));
-  z-index: 1;
-}
+    right: 0;
+    background: linear-gradient(to left, var(--grey), rgba(255, 255, 255, 0));
+    z-index: 1;
+  }
   .semester-grid {
     display: flex;
     flex-direction: row;

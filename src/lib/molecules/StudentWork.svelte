@@ -45,8 +45,7 @@
     position: relative;
   }
 
-  .gradient-container::before,
-  .gradient-container::after {
+  .gradient-container::before, .gradient-container::after {
     content: '';
     position: absolute;
     top: 0;
