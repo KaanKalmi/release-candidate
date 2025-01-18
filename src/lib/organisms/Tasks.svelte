@@ -38,7 +38,8 @@
     border-radius: var(--rounded);
     box-shadow: -4px 4px var(--lavender);
     min-height: 18rem;
-    max-width: 35em;
+    width: fit-content;
+    max-width: 18em;
     padding: 1rem 1.25rem 2rem 1.25rem;
 
     strong {
@@ -81,5 +82,11 @@
         margin-bottom: 1.25em;
         padding-left: .75em;
       }
+  }
+
+  @media (768px <= width) {
+    section{
+      max-width: 35em;
+    }
   }
 </style>
