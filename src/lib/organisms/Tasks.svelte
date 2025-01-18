@@ -75,6 +75,7 @@
         white-space: nowrap;
       }
     }
+    
     p {
         margin-top: -.5em;
         margin-bottom: 1.25em;
