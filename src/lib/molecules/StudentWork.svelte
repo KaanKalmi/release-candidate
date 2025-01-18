@@ -5,6 +5,7 @@
   if (tasks) { tasks.forEach((task) => { if (!stargazer && task.forks && task.forks.length > 0) { stargazer = true; } });}
 </script>
 
+{#if tasks && tasks.length > 0}
 <section class="showcase {stargazer ? 'stargazer' : ''}">
   <Heading title="Studentenwerk" />
   <div class="gradient-container">
@@ -34,6 +35,7 @@
   </ul>
   </div>
 </section>
+{/if}
 
 <style>
   .showcase { display: block; }
