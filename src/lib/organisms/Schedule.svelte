@@ -111,7 +111,7 @@
   }
 
   .week-container {
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0 1rem 0;
   }
 
   .week + .week {
@@ -127,6 +127,8 @@
     z-index: 1;
     margin-left: -.2em;
     padding-left: .2em;
+    padding-block: .5em;
+    margin-block: 0;
   }
 
   .week {
