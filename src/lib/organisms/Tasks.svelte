@@ -39,7 +39,8 @@
     box-shadow: -4px 4px var(--lavender);
     min-height: 18rem;
     width: fit-content;
-    max-width: 18em;
+    max-width: 80%;
+    word-wrap: break-word;
     padding: 1rem 1.25rem 2rem 1.25rem;
 
     strong {
