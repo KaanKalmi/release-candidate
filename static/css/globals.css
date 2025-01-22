@@ -29,7 +29,7 @@
 
 body { 
   overflow-x: hidden;
-  padding-inline: 1rem; 
+  padding-inline: .25rem; 
 }
 
 h2 { 

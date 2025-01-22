@@ -126,11 +126,16 @@
 
   li.extra {
     display: none;
-    padding: 0.25em 0.1em;
-    border-radius: var(--rounded);
-    height: 2em;
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-left: .5em;
     border: 2px solid var(--lavender);
+    border-radius: var(--rounded);
     box-shadow: -4px 4px var(--turquoise);
+    margin-top: 0.6em;
+    background: var(--white);
+    height: 3.75rem;
+    overflow: hidden;
   }
 
   li.extra span {
