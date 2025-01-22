@@ -58,4 +58,5 @@
       border-radius: var(--rounded);
     }
   }
+
 </style>

@@ -146,11 +146,4 @@
       animation: none; 
     } 
   }
-
-  @media (min-width: 1440px) { 
-    .semester-grid { 
-      justify-content: space-around; 
-      padding: 2em 0 2rem 0; 
-    } 
-  }
 </style>

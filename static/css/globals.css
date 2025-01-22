@@ -27,7 +27,11 @@
   display: none; 
 }
 body { 
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-left: 1rem; 
+  padding-right: 1rem;
+ }
+
 h2 { 
   margin-left: 1.5rem; 
 }
