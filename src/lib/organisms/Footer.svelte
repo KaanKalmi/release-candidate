@@ -44,7 +44,7 @@
     width: 1.5em;
     aspect-ratio: 1;
     left: 0;
-    border-radius: 0 0 50% 0;
+    border-radius: 0 0 1rem 0;
     bottom: 0.75em;
     box-shadow: var(--rounded) var(--rounded) 0 var(--lavender);
     transform: rotate(90deg);

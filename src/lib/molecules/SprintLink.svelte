@@ -170,4 +170,9 @@
       width: 400px;
     }
   }
+  @media (2000px <= width) {
+    li {
+      width: 475px;
+    }
+  }
 </style>

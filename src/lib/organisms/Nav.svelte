@@ -113,7 +113,7 @@
         display: flex;
         flex-direction: row;
         gap: 1.75rem;
-        border-radius: var(--rounded) var(--rounded) 0 0;
+        border-radius: 1rem 1rem 0 0;
         margin: 0;
         padding: 0.5em 1.5rem;
         list-style: none;
@@ -137,7 +137,7 @@
         width: 1.5rem;
         height: 1.5rem;
         left: -1.5em;
-        border-radius: 0 0 50% 0;
+        border-radius: 0 0 1rem 0;
         bottom: 0;
         box-shadow: 0.5em 0.5em 0 0 var(--grey);
       }

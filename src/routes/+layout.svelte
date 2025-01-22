@@ -55,7 +55,7 @@
     :global(main) {
       background-color: var(--grey);
       padding: 0 2rem 0 2rem;
-      border-radius: var(--rounded);
+      border-radius: 1rem 0 0 0;
     }
   }
 

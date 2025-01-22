@@ -74,6 +74,12 @@
   @media (1600px <= width) {
     .semester{
       width: 20%;
+      margin-left: .5em;
+    }
+  }
+  @media (2560px <= width) {
+    .semester{
+      width: 35%;
     }
   }
 </style>
