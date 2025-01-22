@@ -124,7 +124,7 @@
     }
   }
 
-  @media (min-width: 720px) {
+  @media (720px <= width) {
     footer { 
       flex-wrap: nowrap;
 
@@ -147,7 +147,7 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (1024px <= width) {
     footer {
       justify-content: left;
       padding: 0 0 2em 2em;

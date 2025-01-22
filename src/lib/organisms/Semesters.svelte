@@ -20,11 +20,11 @@
   {/if}
 
   <div class="gradient-container">
-    <div class="semester-grid">
+    <section class="semester-grid">
       {#each semesters as semester, i}
        <Semester {semester} {i} />
       {/each}
-    </div>
+    </section>
   </div>
 </section>
 

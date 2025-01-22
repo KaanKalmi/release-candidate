@@ -159,13 +159,13 @@
     margin-right: 1em;
   }
 
-  @media (min-width: 1100px) {
+  @media (1100px <= width) {
     li {
       width: 350px;
     }
   }
 
-  @media (min-width: 1800px) {
+  @media (1800px <= width) {
     li {
       width: 400px;
     }

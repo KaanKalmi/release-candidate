@@ -57,8 +57,12 @@
       justify-content: start;
       flex-direction: row;
       flex-wrap: wrap;
-      .hva-logo { display: inline-block; width: 70%; }
 
+      .hva-logo { 
+        display: inline-block; 
+        width: 70%; 
+      }
+      
       p {
         position: relative;
         letter-spacing: -0.03em;
@@ -66,6 +70,7 @@
         margin-left: 0.25em;
         display: none;
       }
+
       p::before { 
         content: unset; 
       }
@@ -238,6 +243,12 @@
         }
       }
     }
+  }
+
+  @media (1600 <= width){
+    .hva-logo {  
+          width: 15%; 
+        }
   }
   @keyframes up { 
     to { transform: translateY(0); } 

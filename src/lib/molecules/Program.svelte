@@ -39,7 +39,7 @@
     letter-spacing: -0.04em; 
   }
 
-  @media (min-width: 750px) { 
+  @media (750px <= width) { 
     section{ 
       padding: 3rem .25rem 2rem 1%;
 
