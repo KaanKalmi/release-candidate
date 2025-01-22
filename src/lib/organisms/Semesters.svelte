@@ -138,7 +138,7 @@
     overflow: scroll;
     gap: 1.75em;
     scroll-snap-type: x mandatory;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 2rem 2rem 0;
   }
 
   @media (prefers-reduced-motion: reduce) { 
