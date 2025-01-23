@@ -16,7 +16,7 @@ Voor de nieuwe website van het FDND Programma hebben we een complete make-over g
 ## Screenshot
 De website live bekijken kan ook! Klik hiervoor op de link: [FDND Programma website](https://fdnd-programma.netlify.app/)
 
-![image](https://github.com/user-attachments/assets/8b02d733-98d2-45e9-83c6-6c7356bd148a)
+![FDND programma]![Arc_ywU0Crx5hV](https://github.com/user-attachments/assets/6c2813dd-841f-4708-9374-ae701ba0322d)
 
 
 ## Installatie
