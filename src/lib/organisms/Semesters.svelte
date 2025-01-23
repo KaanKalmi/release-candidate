@@ -40,17 +40,18 @@
 
   h2 { 
     margin: 0; 
-    padding: 3rem .1rem 1.5rem 1%; 
+    padding: 3rem .1rem 1rem 1.5rem; 
   }
 
   form {
     label{
       display: flex;
       flex-direction: column;
+      width: 8rem;
       color: var(--blueberry);
       font-size: 0.7rem;
       font-weight: 700;
-      margin-left: 1%;
+      margin-left: 1.5em;
     }
   
 
