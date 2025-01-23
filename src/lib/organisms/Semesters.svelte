@@ -137,10 +137,12 @@
     flex-direction: row;
     justify-content: space-between;
     overflow: scroll;
-    gap: 1.75em;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
+    gap: 1.75em;
     padding: 1.5rem 2rem 2rem 0;
   }
+
 
   @media (prefers-reduced-motion: reduce) { 
     .pacman::before, .pacman::after { 
